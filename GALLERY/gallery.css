@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.odd{
+    /* background-color: gray; */
+    height: 350px;
+    margin: 50px 10px;
+    
+
+    
+    display: grid;
+    
+    grid-template-areas: 
+    "imagel imagel imagel imagel contentl contentl contentl"
+    "imagel imagel imagel imagel contentl contentl contentl"
+    "imagel imagel imagel imagel contentl contentl contentl"
+    
+    ;
+}
+.even{
+    /* background-color: gray; */
+    height: 350px;
+    margin: 50px 10px;
+    
+
+    /* border: #ff3333 solid 1px; */
+
+
+    
+    display: grid;
+    
+    grid-template-areas: 
+    "contentr contentr contentr imager imager imager imager"
+    "contentr contentr contentr imager imager imager imager"
+    "contentr contentr contentr imager imager imager imager"
+
+    
+    
+    ;
+}
+
+.img_left{
+    grid-area: imagel;
+    justify-content: center;
+    align-items: center;
+    margin: auto 30px;
+    
+    
+}
+.img_right{
+    grid-area: imager;
+    justify-content: center;
+    align-items: center;
+    margin: auto 30px;
+    
+    
+    
+}
+.img_left img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.img_right img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.content_left h2{
+    margin-top: 5px;
+}
+.content_right h2{
+    margin-top: 5px;
+}
+
+.content_left{
+    grid-area: contentl;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0px;
+    
+}
+.content_right{
+    grid-area: contentr;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0px;
+    
+}
+
+.content_left p{
+    margin: 0px 0px;
+    padding: 10px 30px;
+}
+.content_right p{
+    margin: 0px 0px;
+    padding: 10px 30px;
+}
+
+@media only screen and (max-width : 1000px){
+    .odd{
+        /* background-color: gray; */
+        height: 400px;
+        margin: 50px 10px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas: 
+        "imagel imagel imagel contentl contentl "
+        "imagel imagel imagel contentl contentl "
+        "imagel imagel imagel contentl contentl"
+        "imagel imagel imagel contentl contentl"
+        
+        
+        
+        
+        
+        ;
+    }
+    .even{
+        /* background-color: gray; */
+        height: 400px;
+        margin: 50px 10px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas:
+        "contentr contentr imager imager imager" 
+        "contentr contentr imager imager imager" 
+        "contentr contentr imager imager imager" 
+        "contentr contentr imager imager imager" 
+        
+        
+        
+        
+        
+        ;
+    }
+    .img_left{
+        grid-area: imagel;
+        justify-content: center;
+        align-items: center;
+        margin: auto 30px;
+
+        
+    }
+    .img_right{
+        grid-area: imager;
+        justify-content: center;
+        align-items: center;
+        margin: auto 30px;
+
+        
+    }
+    .img_left img{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .img_right img{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .content_left{
+        grid-area: contentl;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        
+    }
+    .content_right{
+        grid-area: contentr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        
+    }
+
+    .content_left p{
+        margin: 0px 0px;
+        padding: 10px 20px;
+    }
+    .content_right p{
+        margin: 0px 0px;
+        padding: 10px 20px;
+    }
+    
+
+    
+}
+@media only screen and (max-width : 800px){
+    .odd{
+        /* background-color: gray; */
+        height: 760px;
+        margin: 50px 10px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas: 
+        "imagel imagel imagel"
+        "imagel imagel imagel"
+        "imagel imagel imagel"
+        "imagel imagel imagel"
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        
+
+        
+        
+        ;
+    }
+    .even{
+        /* background-color: gray; */
+        height: 760px;
+        margin: 50px 10px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas: 
+        "imager imager imager"
+        "imager imager imager"
+        "imager imager imager"
+        "imager imager imager"
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        
+        
+        
+        ;
+    }
+    .img_left{
+        grid-area: imagel;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .img_right{
+        grid-area: imager;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .img_left img{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .img_right img{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .content_left{
+        grid-area: contentl;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        
+    }
+    .content_right{
+        grid-area: contentr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        
+    }
+
+    .content_left p{
+        margin: 0px 0px;
+        padding: 5px 20px;
+    }
+    .content_right p{
+        margin: 0px 0px;
+        padding: 5px 20px;
+    }
+
+}
+
+@media only screen and (max-width : 700px){
+    .odd{
+        /* background-color: gray; */
+        height: 650px;
+        margin: 50px 10px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas: 
+        "imagel imagel imagel"
+        "imagel imagel imagel"
+        "imagel imagel imagel"
+        "imagel imagel imagel"
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        "contentl contentl contentl "
+        
+        
+        ;
+    }
+    .even{
+        /* background-color: gray; */
+        height: 650px;
+        margin: 50px 10px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas: 
+        "imager imager imager"
+        "imager imager imager"
+        "imager imager imager"
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+        "contentr contentr contentr "
+
+        
+        ;
+    }
+    .img_left{
+        grid-area: imagel;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        
+    }
+    .img_right{
+        grid-area: imager;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        
+    }
+    .img_left img{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .img_right img{
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .content_left{
+        grid-area: contentl;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        
+    }
+    .content_right{
+        grid-area: contentr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        
+    }
+
+    .content_left p{
+        /* margin: 0px 0px; */
+        padding: 5px 15px;
+    }
+    .content_right p{
+        /* margin: 0px 0px; */
+        padding: 5px 15px;
+    }
+    
+}
